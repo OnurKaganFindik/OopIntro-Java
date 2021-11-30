@@ -3,13 +3,10 @@ package oopIntro;
 public class Main {
 
 	public static void main(String[] args) {
-		Product product1= new Product(); 
-		product1.id=1;
-		product1.name="Lenova V14";
-		product1.unitPrice=15000;
-		product1.detail="16 GB Ram";
+		Product product1= new Product(1,"Lenova V14",15000,"16 GB Ram"); //object creation of class Product with parameters 
+	
 		
-		Product product2= new Product(); 
+		Product product2= new Product(); //object creation of class Product with default parameters
 		product2.id=2;
 		product2.name="Lenova V15";
 		product2.unitPrice=12000;
@@ -24,7 +21,7 @@ public class Main {
 		
 		
 		
-		Product[] products= {product1,product2,product3};
+		Product[] products= {product1,product2,product3}; //creating an array of Product class and storing it in products variable 
 		
 		for (Product product : products) {
 			
@@ -34,6 +31,15 @@ public class Main {
 		
 		
 		System.out.println(products.length);
+
+		Category category1= new Category(); //object creation of class Category with default parameters
+		category1.id=1;
+		category1.name="Laptop";
+
+		Category category2= new Category();
+		category1.id=2;
+		category1.name="Ev/Bahçe";
+
 		
 	}
 
