@@ -37,9 +37,14 @@ public class Main {
 		category1.name="Laptop";
 
 		Category category2= new Category();
-		category1.id=2;
-		category1.name="Ev/Bahçe";
+		category2.id=2;
+		category2.name="Ev/Bahçe";
 
+
+		ProductManager productManager= new ProductManager(); //object creation of class ProductManager with default parameters
+		productManager.addToChart(product1);
+		productManager.addToChart(product2);
+		productManager.addToChart(product3);
 		
 	}
 
